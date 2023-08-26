@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobili.css">
+    <title>Mini Calculadora</title>
+</head>
+<body>
+
+    <header class="container-topo">
+        <div class="container-topo_titulo">
+            <h2>Calculadora de Conversões</h2>
+        </div>
+    </header>
+    <main class="container-principal">
+        <section id="container-escolha" class="container-principal_conteudo">
+            <div id="escolha"  class="container-principal_conteudo-titulo">
+                <h3>Escolha uma opção:</h3>
+                <div class="container-botoes-de-escolha">
+                   <button id="botao-1" class="botoes-de-escolha">Celsius para Fahrenheit</button>
+                   <button id="botao-2" class="botoes-de-escolha">Quilômetros para Milhas</button>
+                   <button id="botao-3" class="botoes-de-escolha">Sair</button>
+                </div>  
+                <div id="celsius" class="celsius-milhas">
+                    <p>Informe o Valor que deseja converter:</p>
+
+                    <form method="post" onsubmit="limparCampos()">
+                       <input type="text " id="entrada" name="entrada" value="" onfocus="expressaoMatematica(this.form)"> <br><br>
+                       <input type="text" id="resultado" name="resultado" value="" onfocus="this.blur()"><br><br>
+                       <input type="submit" value="Limpar Campos">
+                    </form>
+
+                </div>
+                <div id="milhas" class="celsius-milhas">
+                    <p>Informe o Valor que deseja converter:</p>
+
+                    <form method="post" onsubmit="limparCamposMilhas()">
+                       <input type="text " id="entradamilhas" name="entradamilhas" value="" onfocus="expressaoMatematicaMilhas(this.form)"> <br><br>
+                       <input type="text" id="resultadomilhas" name="resultadomilhas" value="" onfocus="this.blur()"><br><br>
+                       <input type="submit" value="Limpar Campos Milhas">
+                    </form>
+                </div>
+            </div>
+            <button id="btn" class="container-escolha_botao">INICIAR</button>
+        </section>
+    </main>
+    <footer class="container-final">
+        <div class="container-final_conteudo">
+            <p> &copy; Desenvolvido por Junior Teixeira</p>
+        </div>
+    </footer>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

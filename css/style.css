@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container-topo{
+    background-color: #4E2559;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-topo_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-topo_titulo h2{
+    color: #fff;
+    border-bottom: 1px solid rgb(202, 192, 192);
+}
+/**************************** TOPO **************************/
+.container-principal{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left:  100px solid #2A8C70;
+    border-right: 100px solid #2A8C70;
+    background-color: #34BF98;
+}
+.container-principal_conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container-principal_conteudo-titulo{
+    width: 600px;
+    height: 500px;
+    border: 3px solid rgb(209, 199, 199);
+    background-color: rgb(95, 88, 88);
+}
+.container-principal_conteudo-titulo h3{
+    text-align: center;
+    color: #F29580;
+    padding-top: 20px;
+    font-size: 22px;
+    
+}
+.container-escolha_botao{
+    width: 150px;
+    height: 30px;
+    background-color: #1c2c7c;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 5px  5px 2px gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container-escolha_botao:hover{
+    background-color: rgb(14, 14, 119);
+}
+.container-escolha_botao:active{
+    padding-top: 10px;
+}
+.container-botoes-de-escolha{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.botoes-de-escolha{
+    width: 190px;
+    height: 30px;
+    background-color: #1c2c7c;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.celsius-milhas{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(209, 186, 186);
+    margin: 30px auto;
+}
+.celsius-milhas p{
+    color: rgb(22, 21, 21);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.celsius-milhas input{
+    width: 200px;
+    height: 30px;
+    margin-left: 150px;
+}
+
+/************ CONTEÚDO ****************************************/
+.container-final{
+    background-color: #4E2559;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color: #fff;
+}
